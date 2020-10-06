@@ -18,7 +18,7 @@ public class MultithreadingReading {
             Semaphore semaphore = new Semaphore(2);
             for (File file : allFiles) {
                 System.out.println(file.toString());
-                new Thread(new Runnable() {
+                new Thread(new Runnable() { 
                     @Override
                     public void run() {
                         try {
